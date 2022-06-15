@@ -22,7 +22,7 @@ jobs:
         with:
           projectPath: .
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          unityVersion: 2021.2.9f1
+          unityVersion: 2021.3.4f1
       # テストの実行結果をアーティファクトにアップロードして後から参照可能にする
       - uses: actions/upload-artifact@v2
         if: always()
