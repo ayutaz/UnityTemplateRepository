@@ -21,7 +21,7 @@ jobs:
           lfs: true
 
       - name: Meta File Check (github-hosted ubuntu-latest)
-        uses: DeNA/unity-meta-check@v3.0.0-beta4
+        uses: DeNA/unity-meta-check@v3.1.2
         with:
           enable_junit: true
           junit_xml_path: junit.xml
