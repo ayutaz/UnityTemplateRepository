@@ -41,13 +41,13 @@ jobs:
 
     # Build
     - name: Build project
-      uses: game-ci/unity-builder@v2.0.3
+      uses: game-ci/unity-builder@v2.0.4
       with:
         unityVersion: ${{ matrix.unityVersion }}
         targetPlatform: ${{ matrix.targetPlatform }}
         
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@4.1.7
+      uses: JamesIves/github-pages-deploy-action@v4.4.0
       with:
         branch: gh-pages
         folder: build
